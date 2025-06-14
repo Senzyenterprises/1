@@ -1,0 +1,574 @@
+/* Reset & Base Styles */
+#background-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* behind everything */
+  pointer-events: none;
+  opacity: 0.85; /* very subtle */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* or your base page color */
+  overflow-x: hidden;
+  padding-top: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0f9eb; /* optional light background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #009edc, #4dff6d); /* your brand gradient */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0080c7, #3be35b); /* hover effect */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #009edc #e0f9eb; /* thumb color and track background */
+}
+
+
+/* Entire Header Wrapper */
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Logo container - outside background */
+.logo-container {
+  z-index: 3;
+  padding-right: 10px;
+}
+
+.logo {
+  max-height: 60px;
+  transform: scale(2.0);
+  transform-origin: left center;
+}
+
+/* Background Gradient Nav only */
+.header {
+  flex-grow: 0.9;
+  background: linear-gradient(135deg, #009edc, #4dff6d);
+  padding: 10px 30px;
+  border-radius: 0 0 0 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.nav-item {
+ margin-left: 20px;
+  flex: none;
+}
+
+.nav-links {
+  display: flex;
+  z-index: 1000; /* Ensure it's on top */
+  align-items: center;
+  position: static;
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+  background: none;
+}
+
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal on desktop */
+  gap: 10px;
+  align-items: center;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: white !important;
+  font-weight: 700;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #222;
+}
+
+.nav-links.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logo {
+  height: 60px; /* Increase this value if needed */
+  transform: scale(1.5); /* Scales the logo visually */
+  transform-origin: left center;
+  z-index: 5;
+}
+
+/* Hero Section */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.data-hero-section {
+  background-image: url('https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1600&q=80'); /* Abstract tech/data background */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.data-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.data-hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.data-services-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0c4a6e;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.data-pricing-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pricing-table-wrapper {
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.pricing-table thead {
+  background-color: #0c4a6e;
+  color: white;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #f2f9ff;
+}
+
+.why-senzy-data {
+  padding: 80px 20px;
+  background-color: #f9fcff;
+  text-align: center;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.reason-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.reason-card:hover {
+  transform: translateY(-6px);
+}
+
+.reason-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0c4a6e;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.data-portfolio {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.portfolio-item {
+  background: #f1f8fc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.portfolio-item h4 {
+  margin: 15px 0 8px;
+  color: #0c4a6e;
+  font-size: 1.1rem;
+}
+
+.portfolio-item p {
+  padding: 0 15px 20px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.data-final-cta {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.data-final-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.data-final-cta .cta-btn {
+  background: #fff;
+  color: #0284c7;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.data-final-cta .cta-btn:hover {
+  background: #d1ecff;
+}
+
+/* WhatsApp Floating Icon */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Footer */
+.footer-modern {
+  background: linear-gradient(to right, #007bff, #00d084); /* Gradient blue → green */
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-modern h5.footer-logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.footer-modern h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.footer-modern .footer-links {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.footer-modern .footer-links li {
+  margin-bottom: 8px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-modern .footer-links a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.footer-modern .footer-links a:hover {
+  color: #e0ffe8;
+  text-decoration: underline;
+}
+
+.footer-modern i {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.footer-modern a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-modern a:hover {
+  color: #e0ffe8;
+}
+
+.footer-modern .text-center small {
+  display: block;
+  margin-top: 20px;
+  color: #e6fdf4;
+}
+
+/* Animations */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+   .hamburger {
+    display: block;
+    border: none;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+    margin-left: auto;
+    gap: 2px;
+    }
+   
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto; /* Only fit the nav content */
+    background: linear-gradient(135deg, #007fae, #3bbf54);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: scaleY(0); /* Hide initially */
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    z-index: 1002;
+  }
+
+    .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    color: white;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+  .data-hero-section {
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+}
+
+}

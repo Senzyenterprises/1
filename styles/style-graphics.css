@@ -1,0 +1,715 @@
+/* Reset & Base Styles */
+#background-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* behind everything */
+  pointer-events: none;
+  opacity: 0.85; /* very subtle */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* or your base page color */
+  overflow-x: hidden;
+  padding-top: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0f9eb; /* optional light background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #009edc, #4dff6d); /* your brand gradient */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0080c7, #3be35b); /* hover effect */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #009edc #e0f9eb; /* thumb color and track background */
+}
+
+
+/* Entire Header Wrapper */
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Logo container - outside background */
+.logo-container {
+  z-index: 3;
+  padding-right: 10px;
+}
+
+.logo {
+  max-height: 60px;
+  transform: scale(2.0);
+  transform-origin: left center;
+}
+
+/* Background Gradient Nav only */
+.header {
+  flex-grow: 0.9;
+  background: linear-gradient(135deg, #009edc, #4dff6d);
+  padding: 10px 30px;
+  border-radius: 0 0 0 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.nav-item {
+ margin-left: 20px;
+  flex: none;
+}
+
+.nav-links {
+  display: flex;
+  z-index: 1000; /* Ensure it's on top */
+  align-items: center;
+  position: static;
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+  background: none;
+}
+
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal on desktop */
+  gap: 10px;
+  align-items: center;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: white !important;
+  font-weight: 700;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #222;
+}
+
+.nav-links.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logo {
+  height: 60px; /* Increase this value if needed */
+  transform: scale(1.5); /* Scales the logo visually */
+  transform-origin: left center;
+  z-index: 5;
+}
+
+/* Hero Section */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.graphic-hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+
+.services-graphics {
+  background: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.graphics-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.graphic-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.graphic-card:hover {
+  transform: translateY(-5px);
+}
+
+.graphic-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.graphic-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.graphic-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.design-process {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.process-step {
+  flex: 1 1 220px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  background-color: #00bfa6;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.process-step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.process-step p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.portfolio-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  aspect-ratio: 4/3;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.logo-pricing-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.logo-pricing-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.logo-pricing-section .section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.pricing-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.pricing-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 8px;
+}
+
+.pricing-card .btn {
+  background-color: #00b162;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.pricing-card .btn:hover {
+  background-color: #009c52;
+  transform: scale(1.05);
+}
+
+.pricing-card.premium {
+  border: 2px solid #00b162;
+}
+
+.why-choose-us {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #007bff;;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.why-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+.why-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  color: #006d77;
+  margin-bottom: 0.5rem;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.testimonials {
+  background-color: #fff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #012a4a;
+  margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #f0f4f8;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  font-size: 0.95rem;
+  color: #006d77;
+  font-weight: 600;
+}
+
+/* Final CTA Section */
+.final-cta {
+  background: linear-gradient(to right, #0f3443, #34e89e);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.final-cta .cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.final-cta .cta-btn {
+  background-color: white;
+  color: #0f3443;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.final-cta .cta-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Floating WhatsApp Icon */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Footer */
+.footer-modern {
+  background: linear-gradient(to right, #007bff, #00d084); /* Gradient blue → green */
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-modern h5.footer-logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.footer-modern h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.footer-modern .footer-links {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.footer-modern .footer-links li {
+  margin-bottom: 8px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-modern .footer-links a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.footer-modern .footer-links a:hover {
+  color: #e0ffe8;
+  text-decoration: underline;
+}
+
+.footer-modern i {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.footer-modern a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-modern a:hover {
+  color: #e0ffe8;
+}
+
+.footer-modern .text-center small {
+  display: block;
+  margin-top: 20px;
+  color: #e6fdf4;
+}
+
+/* Animations */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+   .hamburger {
+    display: block;
+    border: none;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+    margin-left: auto;
+    gap: 2px;
+    }
+   
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto; /* Only fit the nav content */
+    background: linear-gradient(135deg, #007fae, #3bbf54);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: scaleY(0); /* Hide initially */
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    z-index: 1002;
+  }
+
+    .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    color: white;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+  .graphic-hero {
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+}
+ .pricing-card {
+    padding: 20px;
+  }
+
+  .logo-pricing-section .section-title {
+    font-size: 1.6rem;
+  }
+
+  .logo-pricing-section .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .pricing-card .price {
+    font-size: 1.3rem;
+  }
+
+}

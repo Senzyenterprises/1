@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senzy Enterprises | Brand Kits</title>
+  <link rel="stylesheet" href="styles/style-brand.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Favicon (logo in tab) -->
+  <link rel="icon" href="assets/logo.png/ChatGPT_Image_Jun_12__2025__06_43_28_AM-removebg-preview.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="assets/logo.png/ChatGPT_Image_Jun_12__2025__06_43_28_AM-removebg-preview.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/logo.png/ChatGPT_Image_Jun_12__2025__06_43_28_AM-removebg-preview.png" type="image/png" sizes="16x16"> <!-- Favicon (logo in tab) -->
+  <link rel="icon" href="assets/logo.png/ChatGPT_Image_Jun_12__2025__06_43_28_AM-removebg-preview.png" type="image/png" sizes="104x104">
+</head>
+<body>
+<canvas id="background-dots"></canvas>
+<div id="particles-js"></div>
+
+<section class="brandkits-hero">
+  <div class="hero-overlay">
+    <div class="hero-content animate">
+      <h1>Complete Brand Kits That Speak for You</h1>
+      <p>Everything you need to build a memorable brand.</p>
+    </div>
+  </div>
+</section>
+
+<section class="brandkits-included" id="brand-kits-packages">
+  <div class="container">
+    <h2 class="section-title">What’s Included in Our Brand Kits</h2>
+    <div class="included-grid">
+      <div class="included-card">
+        <i class="fas fa-shapes"></i>
+        <h3>Logo Variants</h3>
+        <p>Primary, secondary, and icon-only versions for versatile use.</p>
+      </div>
+      <div class="included-card">
+        <i class="fas fa-fill-drip"></i>
+        <h3>Color Palette</h3>
+        <p>Curated colors with HEX codes and usage guidelines.</p>
+      </div>
+      <div class="included-card">
+        <i class="fas fa-font"></i>
+        <h3>Typography Guide</h3>
+        <p>Font pairings and hierarchy for consistent communication.</p>
+      </div>
+      <div class="included-card">
+        <i class="fas fa-border-style"></i>
+        <h3>Brand Patterns</h3>
+        <p>Optional design textures and background elements.</p>
+      </div>
+      <div class="included-card">
+        <i class="fas fa-th-large"></i>
+        <h3>Social Media Templates</h3>
+        <p>4–8 customizable post designs for your platforms.</p>
+      </div>
+      <div class="included-card">
+        <i class="fas fa-id-card"></i>
+        <h3>Business Card Design</h3>
+        <p>Professional layout, ready for high-quality printing.</p>
+      </div>
+      <div class="included-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Brand Style Guide PDF</h3>
+        <p>A downloadable PDF with all your brand essentials and rules.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Header -->
+<header class="header-wrapper animate">
+  <div class="logo-container">
+    <img src="assets/logo.png/ChatGPT_Image_Jun_12__2025__06_43_28_AM-removebg-preview.png" alt="Senzy Logo" class="logo" />
+  </div>
+  <div class="header">
+
+    <button id="hamburger" class="hamburger">&#9776;</button>
+
+    <nav class="nav-links" id="navLinks">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="web-development.html">Web Development</a></li>
+        <li class="nav-item"><a class="nav-link" href="graphic-designs.html">Graphic Designs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Brand Kits</a></li>
+        <li class="nav-item"><a class="nav-link" href="data-work.html">Data Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="refer.html">Refer & Earn</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="brandkit-benefits">
+  <div class="container">
+    <h2 class="section-title">Why a Brand Kit Matters</h2>
+    <div class="benefit-points">
+      <div class="benefit-item">
+        <i class="fas fa-bullseye"></i>
+        <h3>Builds Trust & Recognition</h3>
+        <p>Consistent visuals help your audience instantly recognize and trust your brand.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-clock"></i>
+        <h3>Saves Time</h3>
+        <p>Your design and content teams always know what to use — no guesswork or delays.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-briefcase"></i>
+        <h3>Professional Presence</h3>
+        <p>Keep your brand looking sharp and polished across all platforms and media.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brandkit-packages">
+  <div class="container">
+    <h2 class="section-title">Our Brand Kit Packages</h2>
+    <div class="pricing-grid">
+      <!-- Starter Kit -->
+      <div class="pricing-card">
+        <h3>Starter Kit</h3>
+        <p class="price">$20</p>
+        <ul class="features">
+          <li>Logo Design</li>
+          <li>Color Palette</li>
+          <li>Font Selection</li>
+        </ul>
+         <a href="https://wa.me/2347078693662" target="_blank" class="btn">Get Started</a>
+      </div>
+
+      <!-- Business Kit -->
+      <div class="pricing-card featured">
+        <h3>Business Kit</h3>
+        <p class="price">$30</p>
+        <ul class="features">
+          <li>Everything in Starter Kit</li>
+          <li>Business Card Design</li>
+          <li>3 Social Media Templates</li>
+        </ul>
+         <a href="https://wa.me/2347078693662" target="_blank" class="btn">Get Started</a>
+      </div>
+
+      <!-- Pro Brand Kit -->
+      <div class="pricing-card">
+        <h3>Pro Brand Kit</h3>
+        <p class="price">$50</p>
+        <ul class="features">
+          <li>Full Brand Kit</li>
+          <li>Brand Style Guide (PDF)</li>
+          <li>6 Social Media Templates</li>
+          <li>Extra Design Assets</li>
+        </ul>
+        <a href="https://wa.me/2347078693662" target="_blank" class="btn">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brand-portfolio" class="portfolio-section">
+  <h2>Our Brand Kit Portfolio</h2>
+  <p class="section-subtext">Check out some brand identities we've brought to life.</p>
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="assets/images/5455694.jpg"alt="Interity Kit">
+      <h3>Interity Interiors</h3>
+      <p>Modern, soft branding with neutral tones.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/images/9232182.jpg" alt="ShopPro Brand">
+      <h3>ShopPro</h3>
+      <p>Bold and bright retail branding pack.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/images/8942574.jpg" alt="TechSubmitt ID Kit">
+      <h3>TechSubmitt</h3>
+      <p>Tech-driven, minimalist, and clean identity.</p>
+    </div>
+  </div>
+</section>
+
+<section id="brandkit-testimonials" class="testimonials-section">
+  <h2>What Our Clients Say</h2>
+  <p class="section-subtext">Real stories from businesses we've helped elevate.</p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-text">“Our brand finally feels professional.”</p>
+      <p class="client-name">— Mark D., ShopPro</p>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">“Saved us hours and looks 10x better!”</p>
+      <p class="client-name">— Anita K., TechSubmitt</p>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">“Now our social media and print designs feel connected.”</p>
+      <p class="client-name">— Jane D., Interity Interiors</p>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="brandkit-cta">
+  <div class="cta-content">
+    <h2>Ready to Build a Cohesive Brand?</h2>
+    <a href="https://wa.me/2347078693662" target="_blank" class="cta-button">Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/2347078693662" target="_blank" class="whatsapp-float" title="Chat with us">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+</a>
+
+
+  <!-- Footer -->
+<footer class="footer-modern py-5 animate">
+  <div class="container">
+    <div class="row">
+
+      <!-- Brand Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-logo">Senzy Enterprises</h5>
+        <p>Your trusted partner in digital innovation — from code to creativity.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="web-development.html">Web Dev</a></li>
+          <li><a href="graphic-designs.html">Graphics</a></li>
+          <li><a href="#">Brand Kits</a></li>
+          <li><a href="data.html">Data Work</a></li>
+          <li><a href="refer.html">Refer & Earn</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h6>Contact Us</h6>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:senzyenterprises01@gmail.com">senzyenterprises01@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+2347078693662">07078693662</a></p>
+      </div>
+
+    </div>
+    <div class="text-center pt-3 border-top mt-4 text-white">
+      <small>© 2025 Senzy Enterprises. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": ["#00b4d8", "#00e676"]
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.3,
+        "random": true
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#00b4d8",
+        "opacity": 0.2,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": false
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+<script>
+const canvas = document.getElementById("background-dots");
+const ctx = canvas.getContext("2d");
+
+let dots = [];
+const dotCount = 60;
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+function createDots() {
+  dots = [];
+  for (let i = 0; i < dotCount; i++) {
+    dots.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 1.5 + 0.5,
+      dx: (Math.random() - 0.5) * 0.2,  // slowed down
+      dy: (Math.random() - 0.5) * 0.2   // slowed down
+    });
+  }
+}
+
+function animateDots() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  dots.forEach(dot => {
+    const gradient = ctx.createRadialGradient(dot.x, dot.y, 0, dot.x, dot.y, dot.radius * 3);
+    gradient.addColorStop(0, '#00d084'); // soft green
+    gradient.addColorStop(1, '#007bff'); // soft blue
+
+    ctx.beginPath();
+    ctx.arc(dot.x, dot.y, dot.radius, 0, Math.PI * 2);
+    ctx.fillStyle = gradient;
+    ctx.fill();
+
+    dot.x += dot.dx;
+    dot.y += dot.dy;
+
+    // Bounce effect
+    if (dot.x < 0 || dot.x > canvas.width) dot.dx *= -1;
+    if (dot.y < 0 || dot.y > canvas.height) dot.dy *= -1;
+  });
+
+  requestAnimationFrame(animateDots);
+}
+
+createDots();
+animateDots();
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
