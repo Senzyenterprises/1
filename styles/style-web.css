@@ -613,7 +613,7 @@ ul {
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: #25D366;
   color: white;
   font-size: 24px;
@@ -629,6 +629,11 @@ ul {
   background-color: #1ebe5d;
 }
 
+iframe[title="chat widget"] {
+  max-width: 90vw !important;
+  max-height: 80vh !important;
+  border-radius: 14px !important;
+}
 
 /* Footer */
 .footer-modern {
