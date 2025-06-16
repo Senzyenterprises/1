@@ -697,4 +697,14 @@ ul {
     z-index: 1;
 }
 
+ .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cookie-actions {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
 }
