@@ -365,6 +365,36 @@ ul {
   color: #666;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #03a84e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background: #007a3c;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content#logo {
+  display: block;
+}
+
 .pricing-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -388,7 +418,7 @@ ul {
 .pricing-card .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
+  color: #03a84e;
   margin-bottom: 15px;
 }
 
@@ -396,30 +426,20 @@ ul {
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .pricing-card ul li {
   margin-bottom: 8px;
 }
 
-.pricing-card .btn {
-  background-color: #00b162;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s ease;
+.chat-info {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+  margin-top: 10px;
 }
 
-.pricing-card .btn:hover {
-  background-color: #009c52;
-  transform: scale(1.05);
-}
-
-.pricing-card.premium {
-  border: 2px solid #00b162;
-}
 
 .why-choose-us {
   padding: 3rem 1rem;
