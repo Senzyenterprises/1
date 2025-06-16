@@ -492,15 +492,11 @@ ul {
   font-size: 0.95rem;
 }
 
-.order-btn {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: #0d6efd;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  text-decoration: none;
+.chat-info {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .extras-section {
@@ -629,11 +625,6 @@ ul {
   background-color: #1ebe5d;
 }
 
-iframe[title="chat widget"] {
-  max-width: 90vw !important;
-  max-height: 80vh !important;
-  border-radius: 14px !important;
-}
 
 /* Footer */
 .footer-modern {
